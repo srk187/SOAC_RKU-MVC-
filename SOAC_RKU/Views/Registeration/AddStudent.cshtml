@@ -1,0 +1,59 @@
+﻿@model SOAC_RKU.Data.Student;
+@{
+}
+
+<div style="margin-top:100px">
+    <form method="post" asp-action="AddStudent">
+        <div class="container rcontainer">
+
+            @*image section*@
+            <div> Hello</div>
+            @*Form Section*@
+            <div>
+                <div class="fields mb-3">
+                    <div class="form-group">
+                        <label asp-for="Enrollment_Id"> Enrollment Id</label>
+                        <input asp-for="Enrollment_Id" type="text" class="form-control " placeholder="20SOECE11021" />
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Name">Name</label>
+                        <input asp-for="Name" type="text" class="form-control " />
+                    </div>
+                </div>
+                <div class="fields mb-3">
+                    <div class="form-group">
+                        <label asp-for="Contact" class="form-label">Cotact</label>
+                        <input asp-for="Contact" type="text" class="form-control " />
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Email" class="form-label">Email</label>
+                        <input asp-for="Email" type="text" class="form-control " />
+                    </div>
+                </div>
+                <div class="fields mb-3">
+                    <div class="form-group">
+                        <label asp-for="Age" class="form-label">Age</label>
+                        <input asp-for="Age" type="text" class="form-control " />
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="City" for="city" class="form-label">City</label>
+                        <input asp-for="City" type="text" class="form-control " />
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Department" class="form-label">Department</label>
+                        <input asp-for="Department" type="text" class="form-control " />
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="Address" for="address" class="form-label">Adress</label>
+                    <textarea asp-for="Address" class="form-control" id="add" rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Password" >Password</label>
+                    <input type="password" class="form-control" asp-for="Password" />
+                </div>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-success">Submit</button>
+    </form>
+</div>

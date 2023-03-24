@@ -1,0 +1,139 @@
+﻿*{
+    margin : 0px;
+    padding : 0px;
+}
+.rcontainer{
+    display :flex;
+    gap : 60px;
+    width : 100%;
+    margin : 20px
+}
+
+.fields{
+    display:flex;
+    gap : 30px;
+    justify-content : end;
+    align-content : end;    
+}
+.formcontainer {
+    max-width : 600px;
+    flex-basis: 40%;
+    /*margin: 1.875rem 0rem;*/
+    margin : 80px auto;
+    box-shadow: 0px 0px 07px 1px;
+    border-radius: 0.1rem;
+    justify-content : center;
+    align-content : center;
+}
+.formcontainer h2{
+    margin : 20px;
+    text-align : center;
+    font-family : Calibri;
+}
+.formcontainer div{
+    margin : 20px;
+
+}
+    .formcontainer button {
+        display: block;
+        margin: 0.625rem auto;
+    }
+.formcontainer p{
+    margin : 10px;
+    font-size : 15px;
+}
+.introcontent{
+    display : flex;
+    flex-direction : row;
+    gap : 20px;
+    margin : 30px;
+
+}
+.bodycontent{
+    margin : 30px;
+}
+.bodycontent h2{
+    color : red;
+    text-align : center;
+    font-weight : bold;
+}
+.bodycontent h3{
+    margin : 30px;
+    color : red;
+}
+.heroslide{
+    margin : 30px;
+}
+.imgcontent{
+    height : 400px;
+    margin-top : -30px;
+}
+.imgcontent img{
+    width : 450px;
+}
+p {
+    text-justify: inter-character , inter-word;
+}
+.sbutton_collection {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.btnsports {
+    background-color: red;
+    color: white;
+    width: 100px;
+    font-size: 15px;
+    font-weight : bold;
+    height: 30px;
+    margin : 05px 0px 0px 0px;
+}
+section{
+    margin : 50px;
+}
+.mainsportcontent {
+    display : flex;
+    flex-direction : row;
+    box-shadow: 0px 0px 0px 1px;
+    border-radius: 5px;
+    background-color: #BACDB0;
+    margin: 50px;
+    gap : 40px;
+    padding : 30px;
+}
+
+
+/*Try desig*/
+/*.sname_section2{
+    display : flex;
+    flex-direction : column;
+
+}*/
+
+#cricket, #voleyball, #khokho, #baseball, #kabbady, #badminton, #football, #android, #webify, #ios, #music
+#karalaw, #aeromodeling, #mozilla {
+    display: none;
+}
+.descdetailcontainer{
+    display : flex; 
+    flex-direction : row;
+    gap : 20px;
+
+}
+.descdetailcontainer img{
+    width : 200px;
+
+}
+p{
+    text-justify : auto;
+}
+
+.btnclub {
+    background-color: red;
+    color: white;
+    width: 200px;
+    font-size: 15px;
+    font-weight: bold;
+    height: 30px;
+    margin: 05px 0px 0px 0px;
+}

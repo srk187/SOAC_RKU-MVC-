@@ -1,0 +1,24 @@
+﻿@model SOAC_RKU.Models.Login;
+@{
+}
+<section>
+    <div class="formcontainer">
+        <form method="post" asp-action="Login">
+            <h2>Login</h2>
+            <div class="form-group">
+                @Html.LabelFor(model=> model.Enrollment_Id)
+                @Html.TextBoxFor(model=> model.Enrollment_Id,new { @class= "form-control"})
+                @Html.ValidationMessageFor(model=> model.Enrollment_Id,"",new {@class="text-danger"})
+
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(model=> model.Password)
+                @Html.TextBoxFor(model=>model.Password, new { type="password", @class="form-control" })
+                @Html.ValidationMessageFor(model=> model.Password,"",new {@class="text-danger"})
+            </div>
+            <p><a asp-action="AddStudent" asp-controller="Registeration">Don't have an account?<span>SignUp</span></a></p>
+            
+            <button type="submit" class="btn btn-danger mb-3">Submit</button>
+        </form>
+    </div>
+</section>
