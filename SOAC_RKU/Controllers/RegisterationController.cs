@@ -35,6 +35,7 @@ namespace SOAC_RKU.Controllers
                 };
                 context.Student.Add(sdata);
                 context.SaveChanges();
+                TempData["Username"] = s.Name;
                 return RedirectToAction("Login", "Login");
 
             }
@@ -45,40 +46,6 @@ namespace SOAC_RKU.Controllers
         }
         
 
-        //[HttpGet]
-        //public IActionResult AddStudent()
-        //{
-        //    return View();
-        //}
-        //[HttpPost]
-        //public IActionResult AddStudent(Student s)
-        //{
-        //    if(ModelState.IsValid)
-        //    {
-        //        var student = new Student()
-        //        {
-        //            Enrollment_Id= s.Enrollment_Id,
-        //            Name= s.Name,
-        //            Email = s.Email,
-        //            Address= s.Address,
-        //            City    = s.City,
-        //            Department= s.Department,
-        //            Age = s.Age,
-        //            Contact = s.Contact,
-        //            Password = s.Password,
-
-        //        };
-        //        context.Student.Add(student);
-        //        context.SaveChanges();
-        //        return RedirectToAction("Login", "Login");
-
-
-        //    }
-        //    else
-        //    {
-        //        TempData["error"] = "Please fill all Data";
-        //        return RedirectToAction("");
-        //    }
-        //}
+        
     }
 }

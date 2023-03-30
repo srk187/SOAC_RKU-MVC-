@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewData["Title"] = "Contactus";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div style="margin-top:100px">
+    <form method="post" asp-action="AddStudent">
+        <div class="container rcontainer">
+
+            @*image section*@
+            <div>
+                <img width="400px" height="500px" src="~/img/contactus.jpg" />
+            </div>
+            @*Form Section*@
+            <div>
+                <div class="form-group mb-3">
+                    <label for="Email" class="form-label">Email</label>
+                    <input type="email" class="form-control" />
+                </div>
+                <div class=" form-group mb-5">
+                    <label for="Email" class="form-label">Email</label>
+                    <input type="email" class="form-control" />
+                </div>
+        <center><button type="submit" style="width: 100px; font-weight: bold; font-size: 20px " class="btn btn-danger">Submit</button></center>
+            </div>
+        </div>
+    </form>
+</div>
+
+

@@ -6,7 +6,8 @@ namespace SOAC_RKU.Models
 {
     public class Clubs
     {
-        [Key]
+        [Key] 
+        
         public string? Enrollment_id { get; set; }
         public string? Club_name { get; set; }
         public string? Mentor_name { get; set; }

@@ -126,6 +126,7 @@ section{
 }
 p{
     text-justify : auto;
+    text-align: justify;
 }
 
 .btnclub {

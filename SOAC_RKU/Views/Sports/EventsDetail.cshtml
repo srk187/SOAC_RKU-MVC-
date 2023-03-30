@@ -19,8 +19,8 @@
         <tbody>
             @foreach(Sports items in Model)
             {
-                if(items.Enrollment_id == Context.Session.GetString("EnrollmentId"))
-                {
+                @*if(items.Enrollment_id == Context.Session.GetString("EnrollmentId"))
+                {*@
                     
                 <tr>
                     
@@ -30,9 +30,10 @@
                     <td>@items.Fees</td>
                     <td>
                         <a asp-action="Delete" asp-controller="Sports" asp-route-enroll = "@items.Enrollment_id" class="btn btn-warning">Delete</a>
+                        <a asp-action="Edit" asp-controller="Sports" asp-route-enroll = "@items.Enrollment_id" class="btn btn-warning">Edit</a>
                     </td>
                     </tr>
-                }
+               @* }*@
             }
         </tbody>
     </table>

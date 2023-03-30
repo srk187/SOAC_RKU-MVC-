@@ -59,7 +59,35 @@ namespace SOAC_RKU.Controllers
             return RedirectToAction("Index", "Home");
         }
 
+        [HttpGet]
+        public IActionResult Edit(string enroll)
+        {
+            var enrollment = _context.Sports.SingleOrDefault(item => item.Enrollment_id == enroll);
+            var result = new Sports()
+            {
+                Enrollment_id = enrollment.Enrollment_id,
+                Sport_Name = enrollment.Sport_Name,
+                Mentor_name = enrollment.Mentor_name,
+                Fees = enrollment.Fees,
+            };
+            return View(result);
+        }
+        [HttpPost]
+        public IActionResult Edit(Sports sport)
+        {
+            var update = new Sports()
+            {
+                Enrollment_id = sport.Enrollment_id,
+                Sport_Name  =  sport.Sport_Name,
+                Mentor_name = sport.Mentor_name,
+                Fees = sport.Fees,
+            };
+            _context.Sports.Update(update);
+            _context.SaveChanges();
+            return RedirectToAction("EventsDetail", "Sports");
+            
 
+        }
        
     }
 }

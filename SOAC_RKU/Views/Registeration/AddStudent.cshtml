@@ -1,4 +1,4 @@
-﻿@model SOAC_RKU.Data.Student;
+﻿@model SOAC_RKU.Data.Student
 @{
 }
 
@@ -7,20 +7,22 @@
         <div class="container rcontainer">
 
             @*image section*@
-            <div> Hello</div>
+            <div>
+                <img width="400px" height="500px" src="~/img/register img.jpg"/>
+            </div>
             @*Form Section*@
             <div>
-                <div class="fields mb-3">
+                <div class=" mb-3">
                     <div class="form-group">
                         <label asp-for="Enrollment_Id"> Enrollment Id</label>
                         <input asp-for="Enrollment_Id" type="text" class="form-control " placeholder="20SOECE11021" />
                     </div>
+                </div>
+                <div class="fields mb-3">
                     <div class="form-group">
                         <label asp-for="Name">Name</label>
                         <input asp-for="Name" type="text" class="form-control " />
                     </div>
-                </div>
-                <div class="fields mb-3">
                     <div class="form-group">
                         <label asp-for="Contact" class="form-label">Cotact</label>
                         <input asp-for="Contact" type="text" class="form-control " />
@@ -54,6 +56,6 @@
                 </div>
             </div>
         </div>
-        <button type="submit" class="btn btn-success">Submit</button>
+        <center><button type="submit" style="width: 100px; font-weight: bold; font-size: 20px " class="btn btn-danger">Submit</button></center>
     </form>
 </div>
